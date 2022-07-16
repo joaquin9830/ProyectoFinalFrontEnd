@@ -1,0 +1,71 @@
+.logo-brand{
+    min-width:160px;
+    max-width:180px ;
+}
+
+#Banner {
+    position: relative;
+    height: 100vh;
+    min-height: 500px;
+    max-height: 1080px;
+    background: url('../../../assets/images/pc4.png');
+    background-size: cover;
+    padding: 15px;
+    overflow: hidden;
+    
+}
+
+
+#lead-overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(126, 141, 147, 0.8);
+    z-index: 1
+}
+#lead-content h1 {
+    max-width: 800px;
+    margin: 0 auto 60px auto;
+    text-align: center;
+    color: #fff;
+    font-weight: 900;
+    font-size: 5em;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    line-height: 0.9em
+}
+#lead-content h3 {
+    color: #fdfdfd;
+    text-align: center;
+    font-weight: 500;
+    font-size: 2.25em;
+    margin-bottom: 15px
+}
+
+
+#lead-down {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 10;
+    bottom: 15px;
+    color: #fff
+}
+
+
+
+#lead-down i {
+    animation: pulsate 1.5s ease;
+    animation-iteration-count: infinite;
+    padding-top: 5px
+}
+
+
+
+

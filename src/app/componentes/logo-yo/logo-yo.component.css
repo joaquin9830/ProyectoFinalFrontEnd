@@ -1,0 +1,48 @@
+.row{
+    padding:10px;
+}
+div{
+    background-color:rgb(10, 89, 247)
+
+}
+@media (min-width: 576px){
+    #foto{
+        position:absolute;
+        width:15%;
+        left:3%;
+        top:600px;
+    }
+}
+@media (min-width: 575px){
+    #foto{
+        position:absolute;
+        width:15%;
+        left:3%;
+        top:680px;
+    }
+}
+
+#about{
+    margin-top:5%;
+    
+    
+}
+#about1 {
+    padding: 55px 30px;
+    
+    
+}
+#about{
+    padding:1px 5px;
+}
+
+#about h3 {
+    color: #000000
+}
+
+#about p {
+    color: #ffffff;
+    
+   
+}
+
