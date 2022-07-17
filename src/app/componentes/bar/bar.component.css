@@ -1,0 +1,21 @@
+.logo-brand{
+    min-width:160px;
+    max-width:180px ;
+}
+.logo-brand{
+    width:15%;
+    float:left;
+  }
+.logo-brand1{
+    width:25%;
+    float:left;
+  }
+
+div{
+  color:#fff;
+  font-size:14px;
+  display:flex;
+  flex-direction:column;
+  text-align:center;
+  
+}
