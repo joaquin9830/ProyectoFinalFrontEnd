@@ -1,0 +1,18 @@
+.row{
+    padding:20px;
+    background-color:rgb(22, 90, 236)
+}
+div{
+    color:#fff;
+}
+.container{
+    width:auto;
+}
+.primer, .segundo{
+    display:inline-block;
+    text-align:justify;
+}
+.img-sk{
+    box-shadow:10px 10px 30px rgb(0, 0, 0);
+    
+}
