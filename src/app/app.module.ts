@@ -11,6 +11,9 @@ import { SkillsComponent } from './componentes/skills/skills.component';
 import { NgCircleProgressModule } from 'ng-circle-progress';
 import { ProyectsComponent } from './componentes/proyects/proyects.component';
 import { BarComponent } from './componentes/bar/bar.component';
+import { HttpClientModule} from '@angular/common/http';
+import { HomeComponent } from './componentes/home/home.component';
+import { LoginComponent } from './componentes/login/login.component';
 
 @NgModule({
   declarations: [
@@ -21,12 +24,18 @@ import { BarComponent } from './componentes/bar/bar.component';
     EducationComponent,
     SkillsComponent,
     ProyectsComponent,
-    BarComponent
+    BarComponent,
+    HomeComponent,
+    LoginComponent
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgCircleProgressModule.forRoot({}),
+    HttpClientModule
+    
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
