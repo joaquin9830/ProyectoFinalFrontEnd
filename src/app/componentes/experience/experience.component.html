@@ -1,38 +1,21 @@
-<div class="wrapper">
-    
-    <div class="center-line">
-        <a href="#" class="scroll-icon"><i class="fas fa-caret-up"></i></a>
+<div class="row">
+    <h1>Experience</h1>
+    <div class="col-lg-2">
+        <button type="button" class="btn btn-success" routerLink="/nuevaexp" *ngIf="isLogged">Nueva experiencia</button>
     </div>
-    <div class="row row-1">
-        <section>
-            <h1>Experience</h1>
-            <i class="icon fas fa-home"></i>
-            <div class="details">
-                <span class="title">Prácticas profesionales</span>
-                <span>Marzo 2016-Diciembre 2017</span>
-            </div>
-            <p>Prácticas profesionales de automatización industrial que se basaban en programar utilizando lenguaje
-                ladder. Para ello se usaban automatas como PLC y ZELIO.</p>
-            <div class="bottom">
-                <a href="http://catalogo.inet.edu.ar/institucion/escuela-de-educacion-tecnica-n-4-124-reynaldo-merin-3043" target="_blank">Read more</a>
+    <div class="col lg 1"></div>
+    <div class="col-lg-11">
+        <table class="table">
+            <tbody>
+                <tr *ngFor="let Experiencia of expe">
+                    <td>{{Experiencia.nombreE}}</td>
+                    <td>{{Experiencia.descripcionE}}</td>
+                    <td>Editar</td>
+                    <td>Borrar</td>
+                </tr>
+            </tbody>
+        </table>
 
-            </div>
-        </section>
+
     </div>
-    <div class="row row-2">
-        <section>
-            <i class="icon fas fa-star"></i>
-            <div class="details">
-                <span class="title">Ayudante de cátedra</span>
-                <span>Mayo 2022</span>
-            </div>
-            <p>Construcción de contenido multimedial de grado en universidad Siglo 21.</p>
-            <div class="bottom">
-                <a href="https://contenidos-qa.siglo21.xyz/grado-pregrado" target="_blank">Read more</a>
-
-            </div>
-        </section>
-    </div>
-
-
 </div>
