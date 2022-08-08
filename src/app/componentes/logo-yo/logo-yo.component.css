@@ -3,8 +3,13 @@
 }
 div{
     background-color:rgb(10, 89, 247)
+    
 
 }
+p{
+    font-family: 'Fjalla One', sans-serif;
+}
+
 @media (min-width: 576px){
     #foto{
         position:absolute;
