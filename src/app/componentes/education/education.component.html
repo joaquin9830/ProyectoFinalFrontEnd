@@ -2,30 +2,28 @@
     <div id="education">
         <h2 class="heading">Education</h2>
         <div class="education-block">
-            <h3>Escuela N°4-124 Reynaldo Merin</h3>
-            <span class="education-date">Marzo 2012 - Diciembre 2017</span>
-            <h4>Técnico electricista especializado en automatización y mantenimiento industrial</h4>
-            <p>
-                Estudios secundarios en escuela técnica.
-            </p>
+            <div style="text-align:center">
+                <button type="button" class="btn btn-success" routerLink="/nuevaedu" *ngIf="isLogged">Añadir
+                    Educación</button><p>Haga click para añadir una nueva educación con su correspondiente descripción</p>
+            </div>
+            <div></div>
         </div>
-        <!-- End .education-block -->
 
-        <div class="education-block">
-            
-            <h3>Universidad Siglo 21</h3>
-            <span class="education-date">Sept 2019 - Sept 2021</span>
-            <h4>Técnico en investigación de la escena del crimen</h4>
-            <img class="imagenes1" src="../../../assets/images/Siglo21-Logo-US21-removebg-preview.png">
+        <div class="education-block" *ngFor="let Educacion of educacion">
+            <h3>{{Educacion.nombreE}}</h3>
+            <h4>{{Educacion.descripcionE}}</h4>
+            <img class="imagenes3" src="../../../assets/images/Educacion.png">
+            <div style="float:right">
+                <button class="btn btn-primary" routerLink="/editexp/{{Educacion.id}}"><i
+                        class="bi bi-pencil-fill"></i>Editar</button>
+            </div>
+            <div style="float:right" text-align: center *ngIf="isLogged"><button class="btn btn-warning"
+                    (click)="delete(Educacion.id)"><i class="bi bi-x-circle-fill"></i>Borrar</button>
+            </div>
+
+
+
 
         </div>
-        <div class="education-block">
-            <h3>INTI</h3>
-            <span class="education-date">febrero 2022 - septiembre 2022</span>
-            <h4>Desarrollador web full stack junior</h4>
-            <img class="imagenes" src="../../../assets/images/S4I-e7wq_400x400-removebg-preview.png">
 
-        </div>
     </div>
-</div>
-<!-- End .education-block -->

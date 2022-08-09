@@ -8,6 +8,12 @@ div{
 .imagenes1{
   width:20%;
 }
+.imagenes3{
+  width:10%;
+}
+button{
+  display: inline-block
+}
 #education {
   padding: 50px 15px 20px 15px;
   border-bottom: 1px solid #5b5bf1;
