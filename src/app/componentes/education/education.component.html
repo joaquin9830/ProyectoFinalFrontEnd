@@ -2,23 +2,24 @@
     <div id="education">
         <h2 class="heading">Education</h2>
         <div class="education-block">
-            <div style="text-align:center">
-                <button type="button" class="btn btn-success" routerLink="/nuevaedu" *ngIf="isLogged">Añadir
-                    Educación</button><p>Haga click para añadir una nueva educación con su correspondiente descripción</p>
+            
+            <div style="text-align:center" *ngIf="isLogged">
+                <button type="button" class="btn btn-success" routerLink="/nuevaedu" *ngIf="isLogged">+</button><p>Haga click para añadir una nueva educación con su correspondiente descripción</p>
             </div>
-            <div></div>
+            
+            
         </div>
 
         <div class="education-block" *ngFor="let Educacion of educacion">
             <h3>{{Educacion.nombreE}}</h3>
             <h4>{{Educacion.descripcionE}}</h4>
             <img class="imagenes3" src="../../../assets/images/Educacion.png">
-            <div style="float:right">
-                <button class="btn btn-primary" routerLink="/editexp/{{Educacion.id}}"><i
-                        class="bi bi-pencil-fill"></i>Editar</button>
+            <div style="float:right" *ngIf="isLogged">
+                <button class="btn btn-primary" routerLink="/editeduca/{{Educacion.id}}"><i
+                        class="bi bi-pencil-fill"></i></button>
             </div>
-            <div style="float:right" text-align: center *ngIf="isLogged"><button class="btn btn-warning"
-                    (click)="delete(Educacion.id)"><i class="bi bi-x-circle-fill"></i>Borrar</button>
+            <div style="float:right"  *ngIf="isLogged"><button class="btn btn-warning"
+                    (click)="delete(Educacion.id)"><i class="bi bi-x-circle-fill"></i></button>
             </div>
 
 
@@ -27,3 +28,4 @@
         </div>
 
     </div>
+    

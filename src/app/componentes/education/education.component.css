@@ -1,7 +1,9 @@
 
 div{
-  background-color:#fffbfb
+  background-color:#ffffff;
+  
 }
+
 .imagenes{
   width:15%;
 }
@@ -11,9 +13,8 @@ div{
 .imagenes3{
   width:10%;
 }
-button{
-  display: inline-block
-}
+
+
 #education {
   padding: 50px 15px 20px 15px;
   border-bottom: 1px solid #5b5bf1;
@@ -61,4 +62,9 @@ button{
 
 .education-block ul {
   padding: 0 0 0 15px
+}
+
+h2{
+  display: inline;
+  font-family: 'Fjalla One', sans-serif;
 }

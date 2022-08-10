@@ -1,7 +1,7 @@
-<div class="row">
-    
-    <div class="col-lg-2">
-        <h1>Experiencia</h1>
+<div id="exp"class="row">
+     <h1>Experiencia</h1>
+    <div  class="col-lg-2" >
+       
         <button type="button" class="btn btn-success" routerLink="/nuevaexp" *ngIf="isLogged">Añadir
             experiencia</button>
     </div>
@@ -15,9 +15,9 @@
                     </td>
                     <td>{{Experiencia.descripcionE}}</td>
                     <td *ngIf="isLogged"><button class="btn btn-primary" routerLink="/editexp/{{Experiencia.id}}"><i
-                                class="bi bi-pencil-fill"></i>Editar</button></td>
+                                class="bi bi-pencil-fill"></i></button></td>
                     <td *ngIf="isLogged"><button class="btn btn-light" (click)="delete(Experiencia.id)"><i
-                        class="bi bi-x-circle-fill"></i>Borrar</button></td>
+                        class="bi bi-x-circle-fill"></i></button></td>
                 </tr>
             </tbody>
         </table>
@@ -25,3 +25,5 @@
 
     </div>
 </div>
+
+

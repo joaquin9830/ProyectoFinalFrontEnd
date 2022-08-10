@@ -12,18 +12,19 @@ export class EducationComponent implements OnInit {
   educacion: Educacion[] = [];
 
 
-  constructor(private educacionS:EducacionService, private tokenService: TokenService) { }
+  constructor(private educacionS: EducacionService, private tokenService: TokenService) { }
   isLogged = false;
+
   ngOnInit(): void {
-    this.cargarEducation();
+    this.cargarEducacion();
     if(this.tokenService.getToken()){
       this.isLogged = true;
-    }else{
+    } else {
       this.isLogged = false;
     }
   }
 
-  cargarEducation():void{
+  cargarEducacion(): void{
     this.educacionS.lista().subscribe(
       data =>{
         this.educacion = data;
@@ -31,15 +32,14 @@ export class EducationComponent implements OnInit {
     )
   }
 
-  delete(id?:number){
-    if(id != undefined){
+  delete(id?: number){
+    if( id != undefined){
       this.educacionS.delete(id).subscribe(
-        data =>{ 
-          this.cargarEducation();
-        },err =>{
-          alert("No se pudo eliminar educación)")
+        data => {
+          this.cargarEducacion();
+        }, err => {
+          alert("No se pudo eliminar");
         }
-        
       )
     }
   }
