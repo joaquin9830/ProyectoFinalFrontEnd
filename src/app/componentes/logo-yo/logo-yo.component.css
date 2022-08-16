@@ -2,12 +2,14 @@
     padding:10px;
 }
 div{
-    background-color:rgb(10, 89, 247)
+    background-color:rgb(10, 89, 247);
+    text-align: center;
     
 
 }
 p{
     font-family: 'Fjalla One', sans-serif;
+    color:#ffffff;
 }
 
 @media (min-width: 576px){
@@ -28,12 +30,13 @@ p{
 }
 
 #about{
-    margin-top:5%;
+    margin-top:3%;
     
     
 }
 #about1 {
     padding: 55px 30px;
+    
     
     
 }
@@ -52,5 +55,18 @@ p{
 }
 #nombre{
     font-weight:bold;
+    
 }
 
+.imagenes{
+    width:15%;
+  }
+  .imagenes1{
+    width:20%;
+  }
+  .imagenes3{
+    width:10%;
+  }
+  
+  
+ 

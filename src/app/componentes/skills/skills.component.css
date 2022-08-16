@@ -1,9 +1,12 @@
 .row{
-    background-color: rgba(219, 220, 232, 0.635);
+    background-color: rgba(79, 204, 226, 0.635);
     padding:20px;
 }
 
 h1, h3{
+    color:rgb(0, 0, 0);
     display: inline;
     font-family: 'Fjalla One', sans-serif;
   }
+
+ 

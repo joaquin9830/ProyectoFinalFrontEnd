@@ -1,19 +1,31 @@
 <div id="aboutme" class="row">
-    <div  class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
-        <img  src="../../../assets/images/IMG_20210409_161503273-modified.png"  
-        class="img-fluid" id="foto" >
 
+    <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+        <img src="../../../assets/images/IMG_20210409_161503273-modified.png" class="img-fluid" id="foto"><button class="btn btn-primary"><i
+            class="bi bi-pencil-fill"></i></button>
+       
     </div>
-    <div id="about1" class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
-        <p id="nombre">{{persona.nombre}} {{persona.apellido}}</p>
-        <p>Desarrollador web full stack jr</p>
+    
+    <div id="about1" class="col-xs-12 col-sm-2 col-md-2 col-lg-2" >
+        <h4 *ngIf="isLogged" id="nombre">{{persona.nombre}} {{persona.apellido}}</h4>
     </div>
-    <div id="about" class="col-xs-12 col-sm-8 col-md-2 col-lg-8">
-        <span>
-            <p>Soy un desarrollador web con fuertes habilidades de aprendizaje. Tengo experiencia en automatismos
-                industriales debido a prácticas profesionales como técnico electricista especializado en automatización.
-                Espero una nueva oportunidad donde pueda desarrollar mis habilidades profesionales como programador</p>
-        </span>
+  <div id="about" class="col-xs-12 col-sm-8 col-md-8 col-lg-8" *ngFor="let About of about">
+    <h3>{{About.nombreE}}</h3>
+    <p>{{About.descripcionE}}</p>
+
+ <div style="float:right" *ngIf="isLogged">
+        <button class="btn btn-primary" routerLink="/editabout/{{About.id}}"><i
+                class="bi bi-pencil-fill"></i></button>
     </div>
+    
+  </div>
+   
+
+   
+
+
+
 
 </div>
+
+

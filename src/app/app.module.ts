@@ -20,6 +20,11 @@ import { NewExperienciaComponent } from './componentes/experience/new-experienci
 import { EditExperienceComponent } from './componentes/experience/edit-experience.component';
 import { NeweducacionComponent } from './componentes/education/neweducacion.component';
 import { EditeducationComponent } from './componentes/education/editeducation.component';
+import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+import { environment } from '../environments/environment';
+import { provideStorage,getStorage } from '@angular/fire/storage';
+import { NewaboutComponent } from './componentes/logo-yo/newabout.component';
+import { EditaboutComponent } from './componentes/logo-yo/editabout.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +41,9 @@ import { EditeducationComponent } from './componentes/education/editeducation.co
     NewExperienciaComponent,
     EditExperienceComponent,
     NeweducacionComponent,
-    EditeducationComponent
+    EditeducationComponent,
+    NewaboutComponent,
+    EditaboutComponent
     
   ],
   imports: [
@@ -44,7 +51,9 @@ import { EditeducationComponent } from './componentes/education/editeducation.co
     AppRoutingModule,
     NgCircleProgressModule.forRoot({}),
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    provideStorage(() => getStorage())
     
     
   ],
