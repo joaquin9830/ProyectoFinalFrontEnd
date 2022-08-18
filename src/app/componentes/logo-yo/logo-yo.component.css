@@ -7,6 +7,11 @@ div{
     
 
 }
+
+.boton{
+    width:fit-content;
+    margin:0 auto;
+}
 p{
     font-family: 'Fjalla One', sans-serif;
     color:#ffffff;
@@ -16,14 +21,18 @@ p{
     #foto{
         position:absolute;
         width:15%;
+        border-radius: 100%;
+        box-shadow: 3px 3px 3px rgb(0, 0, 0);
         left:3%;
         top:600px;
     }
 }
-@media (min-width: 575px){
+@media (max-width: 575px){
     #foto{
         position:absolute;
         width:15%;
+        border-radius: 100%;
+        box-shadow: 3px 3px 3px rgb(0, 0, 0);
         left:3%;
         top:680px;
     }

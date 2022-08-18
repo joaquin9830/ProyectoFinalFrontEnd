@@ -1,32 +1,37 @@
-<div class="div1">
-    <div id="education">
-        <h2 class="heading">Education</h2>
-        <div class="education-block">
-            
-            <div style="text-align:center" *ngIf="isLogged">
-                <button type="button" class="btn btn-success" routerLink="/nuevaedu" *ngIf="isLogged">+</button><p>Haga click para añadir una nueva educación con su correspondiente descripción</p>
-            </div>
-            
-            
+<div class="row">
+    <div class="div1">
+        <div id="education">
+            <section>
+                <h2 class="heading">Education</h2>
+                <div class="education-block" *ngIf="isLogged">
+
+                    <div style="text-align:center" *ngIf="isLogged">
+                        <button type="button" class="btn btn-success" routerLink="/nuevaedu" *ngIf="isLogged">+</button>
+                        <p>Haga click para añadir una nueva educación con su correspondiente descripción</p>
+                    </div>
+
+
+                </div>
+
+                <div class="education-block" *ngFor="let Educacion of educacion">
+                    <h3>{{Educacion.nombreE}}</h3>
+                    <h4>{{Educacion.descripcionE}}</h4>
+                    <img class="imagenes3" src="../../../assets/images/pngegg.png">
+                    <div style="float:right" *ngIf="isLogged">
+                        <button class="btn btn-primary" routerLink="/editeduca/{{Educacion.id}}"><i
+                                class="bi bi-pencil-fill"></i></button>
+                    </div>
+                    <div style="float:right" *ngIf="isLogged"><button class="btn btn-light"
+                            (click)="delete(Educacion.id)"><i class="bi bi-x-circle-fill"></i></button>
+                    </div>
+
+
+
+
+                </div>
+            </section>
+
         </div>
-
-        <div class="education-block" *ngFor="let Educacion of educacion">
-            <h3>{{Educacion.nombreE}}</h3>
-            <h4>{{Educacion.descripcionE}}</h4>
-            <img class="imagenes3" src="../../../assets/images/Educacion.png">
-            <div style="float:right" *ngIf="isLogged">
-                <button class="btn btn-primary" routerLink="/editeduca/{{Educacion.id}}"><i
-                        class="bi bi-pencil-fill"></i></button>
-            </div>
-            <div style="float:right"  *ngIf="isLogged"><button class="btn btn-warning"
-                    (click)="delete(Educacion.id)"><i class="bi bi-x-circle-fill"></i></button>
-            </div>
-
-
-
-
-        </div>
-        
-
     </div>
-    
+
+</div>

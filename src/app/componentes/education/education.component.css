@@ -1,6 +1,6 @@
 
-div{
-  background-color:#ffffff;
+.div1{
+  background-color:#2643e7;
   
 }
 
@@ -17,12 +17,12 @@ div{
 
 #education {
   padding: 50px 15px 20px 15px;
-  border-bottom: 1px solid #5b5bf1;
+  border-bottom: 1px solid #454549;
   text-align: center
 }
 
 #education h2 {
-  color: #000000;
+  color: #fafafa;
   margin-bottom: 50px
 }
 
@@ -47,7 +47,7 @@ div{
 }
 
 .education-block h4 {
-  color: #74808a;
+  color: #d9dfe4;
   clear: both;
   font-weight: 500;
   margin: 0 0 15px 0

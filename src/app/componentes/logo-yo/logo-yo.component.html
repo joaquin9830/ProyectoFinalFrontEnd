@@ -1,13 +1,18 @@
 <div id="aboutme" class="row">
 
     <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
-        <img src="../../../assets/images/IMG_20210409_161503273-modified.png" class="img-fluid" id="foto"><button class="btn btn-primary"><i
-            class="bi bi-pencil-fill"></i></button>
+        <img [src]="image" *ngFor="let image of images" class="img-fluid" id="foto">
+        
+        <div *ngIf="isLogged">
+     <i class="bi bi-camera-fill"></i>
+         <input type="file" (change)="uploadImage($event)"></div>
        
     </div>
-    
+   
     <div id="about1" class="col-xs-12 col-sm-2 col-md-2 col-lg-2" >
-        <h4 *ngIf="isLogged" id="nombre">{{persona.nombre}} {{persona.apellido}}</h4>
+      
+        <h4  id="nombre">{{persona.nombre}} {{persona.apellido}}</h4>
+        <div class="boton" *ngIf="isLogged" ></div>
     </div>
   <div id="about" class="col-xs-12 col-sm-8 col-md-8 col-lg-8" *ngFor="let About of about">
     <h3>{{About.nombreE}}</h3>
