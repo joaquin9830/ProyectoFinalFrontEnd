@@ -1,12 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 .row{
     background-color: rgb(46, 124, 177);
     padding:20px;
 }
 
 h2, h3{
-    color:rgb(4, 25, 63);
+    color:rgb(255, 253, 253);
     display: inline;
-    font-family: 'Fjalla One', sans-serif;
+    font-family: 'Rubik', sans-serif;
   }
 
+ 
+  
+  
+ 
+  .wrapper{
+    background: rgb(31, 39, 71);
+    border-radius: 14px;
+    padding: 25px;
+    margin-left: 20px;
+    margin-bottom: 15px;
+    max-width: 380px;
+    width: 90%;
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.1);
+    text-align: center;
+  }
+  .wrapper2{
+    background: rgb(192, 199, 224);
+    border-radius: 14px;
+    padding: 25px;
+    margin-left: 20px;
+    margin-bottom: 15px;
+    max-width: 380px;
+    width: 90%;
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.1);
+    text-align: center;
+  }
+
+
+  .boton1{
+    margin-bottom: 17px;
+    margin-left: 100px;
+    display:inline-block;
+  }
+  #education {
+    padding: 50px 15px 20px 15px;
+    border-bottom: 1px solid #454549;
+    text-align: center
+  }
+  
+  #education h2 {
+    color: #fafafa;
+    margin-bottom: 50px
+  }
+  
+  .education-block {
+    max-width: 700px;
+    margin: 0 auto 30px auto;
+    padding: 15px;
+    border: 1px solid #000000;
+    text-align: left
+  }
+  
+  .education-block h3 {
+    font-weight: 500;
+    float: left;
+    margin: 0;
+    color: #000000
+  }
+  
+  .education-block span {
+    color: #0b0c0c;
+    float: right
+  }
+  
+  .education-block h4 {
+    color: #d9dfe4;
+    clear: both;
+    font-weight: 500;
+    margin: 0 0 15px 0
+  }
+  
+  .education-block p,
+  .education-block ul {
+    margin: 0;
+    color: #74808a;
+    font-size: 0.9em
+  }
+  
+  .education-block ul {
+    padding: 0 0 0 15px
+  }
   

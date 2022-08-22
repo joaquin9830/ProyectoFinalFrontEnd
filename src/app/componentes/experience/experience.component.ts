@@ -31,6 +31,7 @@ export class ExperienceComponent implements OnInit {
       this.sExperiencia.delete(id).subscribe(
         data => {
           this.cargarExperiencia();
+          alert("Experiencia eliminada");
         }, err => {
           alert("No se pudo borrar la experiencia");
         }

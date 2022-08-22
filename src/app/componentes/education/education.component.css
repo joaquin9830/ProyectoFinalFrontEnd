@@ -1,6 +1,7 @@
 
 .div1{
   background-color:#2643e7;
+  font-family: 'Rubik', sans-serif;;
   
 }
 
@@ -27,6 +28,7 @@
 }
 
 .education-block {
+  background-color: rgb(20, 76, 180);
   max-width: 700px;
   margin: 0 auto 30px auto;
   padding: 15px;
@@ -66,6 +68,6 @@
 
 h2{
   display: inline;
-  font-family: 'Fjalla One', sans-serif;
+  font-family: 'Rubik', sans-serif;
 }
 

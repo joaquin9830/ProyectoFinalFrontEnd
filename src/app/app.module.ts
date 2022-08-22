@@ -25,6 +25,9 @@ import { environment } from '../environments/environment';
 import { provideStorage,getStorage } from '@angular/fire/storage';
 import { NewaboutComponent } from './componentes/logo-yo/newabout.component';
 import { EditaboutComponent } from './componentes/logo-yo/editabout.component';
+import { CargarScriptService } from '../app/service/cargar-script.service';
+import { NewskillComponent } from './componentes/skills/newskill.component';
+import { EditskillComponent } from './componentes/skills/editskill.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +46,9 @@ import { EditaboutComponent } from './componentes/logo-yo/editabout.component';
     NeweducacionComponent,
     EditeducationComponent,
     NewaboutComponent,
-    EditaboutComponent
+    EditaboutComponent,
+    NewskillComponent,
+    EditskillComponent
     
   ],
   imports: [
@@ -58,7 +63,8 @@ import { EditaboutComponent } from './componentes/logo-yo/editabout.component';
     
   ],
   providers: [
-    interceptorProvider
+    interceptorProvider,
+    CargarScriptService
   ],
   bootstrap: [AppComponent]
 })

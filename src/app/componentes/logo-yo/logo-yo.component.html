@@ -3,9 +3,10 @@
     <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
         <img [src]="image" *ngFor="let image of images" class="img-fluid" id="foto">
         
-        <div *ngIf="isLogged">
+        <div *ngIf="isLogged" class="grupo">
+        
      <i class="bi bi-camera-fill"></i>
-         <input type="file" (change)="uploadImage($event)"></div>
+         <input type="file" placeholder="Foto"(change)="uploadImage($event)" ></div>
        
     </div>
    

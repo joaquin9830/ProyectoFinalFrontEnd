@@ -82,6 +82,8 @@ export class LogoYoComponent implements OnInit {
       .catch(error => console.log(error));
 
   }
-
+  onDelete(){
+    
+  }
  
 }

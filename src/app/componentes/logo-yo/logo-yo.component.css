@@ -7,6 +7,19 @@ div{
     
 
 }
+.grupo input{
+    margin-left: 57px;
+    top:15px;
+    padding: 2px 5px 5px 2px;
+}
+
+.grupo i{
+    position:absolute;
+    margin-left: 45px;
+    font-size: 20px;
+    color:#000000
+    
+}
 
 .boton{
     width:fit-content;
