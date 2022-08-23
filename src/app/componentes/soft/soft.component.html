@@ -1,0 +1,29 @@
+<div class="row" id="skills">
+
+    <h2 class="text-center">Soft skills</h2>
+    <div >
+      <div class="wrapper1" style="text-align:center" *ngIf="isLogged">
+        <button type="button" class="btn btn-success" routerLink="/newskill" ><i class="bi bi-arrow-down-circle"></i></button>
+        <p>Añadir skill</p>
+    </div>
+    </div>
+  
+    <div class="text-center col-sm-4 col-md-4 col-lg-4" *ngFor="let Skill of skill">
+      <div class="wrapper2" >
+        <circle-progress [percent]="Skill.descripcionS" [radius]="70" [title]="Skill.nombreS" [outerStrokeWidth]="10" [innerStrokeWidth]="6"
+          [outerStrokeColor]="'#9BFF02'" [innerStrokeColor]="'#D6D6EA'" [animation]="true" [animationDuration]="800">
+        </circle-progress>
+        <div class="botones" *ngIf="isLogged" >
+          <button class="btn btn-primary" routerLink="/editsoft/{{Skill.id}}"><i class="bi bi-pencil-fill"></i></button>
+          <div  class="boton1"><button  class="btn btn-dark" (click)="delete(Skill.id)"><i class="bi bi-x-circle"></i></button>
+          </div>
+        </div>
+  
+      </div>
+      
+    </div>
+  
+  
+  
+  
+  </div>

@@ -28,6 +28,10 @@ import { EditaboutComponent } from './componentes/logo-yo/editabout.component';
 import { CargarScriptService } from '../app/service/cargar-script.service';
 import { NewskillComponent } from './componentes/skills/newskill.component';
 import { EditskillComponent } from './componentes/skills/editskill.component';
+import { SoftComponent } from './componentes/soft/soft.component';
+import { NewsoftskillComponent } from './componentes/soft/newsoftskill.component';
+import { EditsoftComponent } from './componentes/soft/editsoft.component';
+
 
 @NgModule({
   declarations: [
@@ -48,7 +52,10 @@ import { EditskillComponent } from './componentes/skills/editskill.component';
     NewaboutComponent,
     EditaboutComponent,
     NewskillComponent,
-    EditskillComponent
+    EditskillComponent,
+    SoftComponent,
+    NewsoftskillComponent,
+    EditsoftComponent
     
   ],
   imports: [

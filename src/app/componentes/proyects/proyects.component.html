@@ -1,12 +1,25 @@
 <div class="row">
     <h1>Proyects</h1>
-    <div id="proyects"class="container">
-        <div class="col-sm-12 col-md-7 col-lg-7 primer">
-            <h2>Portfolio web</h2>
-            <p>HTML-CSS-JS-Angular-Bootstrap</p>
+    <div class="col-lg-2">
+        <button type="button" class="btn btn-success" routerLink="/nuevaedu" *ngIf="isLogged">
+            Nuevo Proyecto
+        </button>
+    </div>
+    <div id="proyects" class="container">
+        <div class="col-sm-12 col-md-7 col-lg-7 primer" *ngFor="let Proyectos of proy">
+            <h2>{{Proyectos.nombreP}}</h2>
+            <p>{{Proyectos.descripcionP}}</p>
+            <div style="float:right" *ngIf="isLogged">
+                <button class="btn btn-primary" routerLink="/editeduca/{{Proyectos.id}}"><i
+                        class="bi bi-pencil-fill"></i></button>
+            </div>
+            <div style="float:right" *ngIf="isLogged"><button class="btn btn-light" (click)="delete(Proyectos.id)"><i
+                        class="bi bi-x-circle-fill"></i></button>
+            </div>
         </div>
         <div class="col-sm-12 col-md-3 col-lg-3 offset-md-1 offset-lg-1 segundo">
             <a href="#"><img src="../../../assets/images/sp.png" class="img-fluid img-sk"></a>
         </div>
+
     </div>
 </div>
