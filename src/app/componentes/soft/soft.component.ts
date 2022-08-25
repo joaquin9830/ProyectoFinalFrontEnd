@@ -29,6 +29,7 @@ export class SoftComponent implements OnInit {
     if(id != undefined){
       this.sSkills.delete(id).subscribe(
         data => {
+          alert("Skill eliminado correctamente!");
           this.cargarSkills();
         }, err => {
           alert("No se pudo borrar soft skill");

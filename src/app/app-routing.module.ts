@@ -10,6 +10,9 @@ import { LoginComponent } from './componentes/login/login.component';
 import { EditaboutComponent } from './componentes/logo-yo/editabout.component';
 import { LogoYoComponent } from './componentes/logo-yo/logo-yo.component';
 import { NewaboutComponent } from './componentes/logo-yo/newabout.component';
+import { EditproyectComponent } from './componentes/proyects/editproyect.component';
+import { NewproyectComponent } from './componentes/proyects/newproyect.component';
+
 import { EditskillComponent } from './componentes/skills/editskill.component';
 import { NewskillComponent } from './componentes/skills/newskill.component';
 import { EditsoftComponent } from './componentes/soft/editsoft.component';
@@ -29,7 +32,10 @@ const routes: Routes = [
   {path:'nuevaskill', component:NewskillComponent},
   {path:'editsk/:id', component:EditskillComponent},
   {path:'newskill', component:NewsoftskillComponent},
-  {path:'editsoft', component:EditsoftComponent}
+  {path:'editsoft/:id', component:EditsoftComponent},
+  {path:'nuevapro', component:NewproyectComponent},
+  {path:'editpro/:id', component:EditproyectComponent},
+  
   
 ];
 

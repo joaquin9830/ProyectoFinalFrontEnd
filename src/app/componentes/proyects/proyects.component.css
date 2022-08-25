@@ -4,6 +4,7 @@
 }
 div{
     color:#fff;
+    font-family: 'Rubik', sans-serif;
 }
 .container{
     width:auto;
@@ -16,3 +17,24 @@ div{
     box-shadow:10px 10px 30px rgb(0, 0, 0);
     
 }
+h2, p {
+    color:rgb(0, 0, 0);
+}
+.image{
+    width: 80%;
+}
+button{
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+.wrapper{
+    background: rgb(31, 39, 71);
+    border-radius: 14px;
+    padding: 25px;
+    margin-left: 20px;
+    margin-bottom: 15px;
+    max-width: 380px;
+    width: 90%;
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.1);
+    text-align: center;
+  }

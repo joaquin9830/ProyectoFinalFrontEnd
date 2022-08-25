@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './componentes/header/header.component';
@@ -31,6 +30,8 @@ import { EditskillComponent } from './componentes/skills/editskill.component';
 import { SoftComponent } from './componentes/soft/soft.component';
 import { NewsoftskillComponent } from './componentes/soft/newsoftskill.component';
 import { EditsoftComponent } from './componentes/soft/editsoft.component';
+import { NewproyectComponent } from './componentes/proyects/newproyect.component';
+import { EditproyectComponent } from './componentes/proyects/editproyect.component';
 
 
 @NgModule({
@@ -55,7 +56,9 @@ import { EditsoftComponent } from './componentes/soft/editsoft.component';
     EditskillComponent,
     SoftComponent,
     NewsoftskillComponent,
-    EditsoftComponent
+    EditsoftComponent,
+    NewproyectComponent,
+    EditproyectComponent
     
   ],
   imports: [

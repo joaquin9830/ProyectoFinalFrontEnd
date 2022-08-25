@@ -10,35 +10,40 @@ import { SSkillsService } from 'src/app/service/s-skills.service';
 })
 export class EditsoftComponent implements OnInit {
 
-  Skill : SSoftskill = null;
+  Skillss: SSoftskill = null;
 
   constructor(
-    private sKills: SSkillsService, 
+    private skillS: SSkillsService,
     private activatedRouter: ActivatedRoute,
-    private router: Router) { }
+    private router: Router
+  ) { }
 
-    ngOnInit(): void {
-      const id = this.activatedRouter.snapshot.params['id'];
-      this.sKills.detail(id).subscribe(
-        data => {
-          this.Skill = data;
-        },err =>{
-          alert("Error al modificar")
-          this.router.navigate(['']);
-        }
-      )
-    }
-    onUpdate():void {
-      const id = this.activatedRouter.snapshot.params['id'];
-      this.sKills.update(id,this.Skill).subscribe(
-        data => {
-          this.router.navigate(['']);
-        },err =>{
-          alert("Error al modificar")
-          this.router.navigate(['']);
-        }
-      )
-    }
+  ngOnInit(): void {
+    const id = this.activatedRouter.snapshot.params['id'];
+    this.skillS.detail(id).subscribe(
+      data => {
+        this.Skillss = data;
+       
+      },err =>{
+        alert("Error al modificar");
+        this.router.navigate(['']);
+      }
+    )
+  }
+
+  onUpdate(): void {
+    const id = this.activatedRouter.snapshot.params['id'];
+    this.skillS.update(id, this.Skillss).subscribe(
+      data => { 
+        alert("Proyecto editado correctamente")
+        this.router.navigate(['']);
+      }, err => {
+        alert("Error al modificar skill")
+        this.router.navigate(['']);
+      }
+    )
+  }
+
 
 
 }

@@ -1,13 +1,17 @@
+
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Proyectos } from '../model/proyectos';
 
+
+
 @Injectable({
   providedIn: 'root'
 })
 export class SProyectosService {
-  URL = 'https://localhost:8008/proyec/';
+  URL = 'http://localhost:8080/proy/';
+
   constructor(private httpClient: HttpClient) { }
 
   public lista(): Observable<Proyectos[]>{
@@ -16,15 +20,14 @@ export class SProyectosService {
 
   public detail(id: number): Observable<Proyectos>{
     return this.httpClient.get<Proyectos>(this.URL + `detail/${id}`);
+  } 
+
+  public save(proyectos: Proyectos): Observable<any>{
+    return this.httpClient.post<any>(this.URL + 'create', proyectos);
   }
 
-  public save(proyecto: Proyectos): Observable<any>{
-    return this.httpClient.post<any>(this.URL + 'create', proyecto);
-  }
-
-  public update(id: number, proyecto: Proyectos): Observable<any>{
-    return this.httpClient.put<any>(this.URL + `update/${id}`, proyecto);
-
+  public update(id: number, proyectos: Proyectos): Observable<any>{
+    return this.httpClient.put<any>(this.URL + `update/${id}`, proyectos);
   }
 
   public delete(id: number): Observable<any>{

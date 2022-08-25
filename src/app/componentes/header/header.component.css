@@ -13,9 +13,16 @@
     background-size: cover;
     padding: 15px;
     overflow: hidden;
-    font-family: 'Rubik', sans-serif;;
+    font-family: 'Rubik', sans-serif;
     
 }
+
+li{
+    font-family: 'Rubik', sans-serif;
+}
+.bi {
+    font-size: 18px;
+  }
 
 
 #lead-overlay {
