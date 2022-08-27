@@ -10,7 +10,7 @@ import { Proyectos } from '../model/proyectos';
   providedIn: 'root'
 })
 export class SProyectosService {
-  URL = 'http://localhost:8080/proy/';
+  URL = 'https://frontendvj.herokuapp.com/proy/';
 
   constructor(private httpClient: HttpClient) { }
 

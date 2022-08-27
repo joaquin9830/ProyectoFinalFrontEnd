@@ -8,10 +8,11 @@
       <p>Añadir skill</p>
   </div>
   </div>
+ 
 
   <div class="text-center col-sm-4 col-md-4 col-lg-4" *ngFor="let Skill of skill">
     <div class="wrapper" >
-      <circle-progress [percent]="Skill.descripcionE" [radius]="70" [title]="Skill.nombreE" [outerStrokeWidth]="10" [innerStrokeWidth]="6"
+      <circle-progress [percent]="Skill.descripcionE" [radius]="70" [showUnits]="false"  [title]="Skill.nombreE" [outerStrokeWidth]="10" [innerStrokeWidth]="6"
         [outerStrokeColor]="'#02FFA3'" [innerStrokeColor]="'#D6D6EA'" [animation]="true" [animationDuration]="800">
       </circle-progress>
       <div class="botones" *ngIf="isLogged" >

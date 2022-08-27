@@ -75,4 +75,14 @@ h2{
   display: inline;
   font-family: 'Rubik', sans-serif;
 }
+@media (max-width: 575.98px) { 
+  h1{font-size:40px; line-height:normal;}
+  .products-details h2{font-size: 40px;}
+  .armar{min-width: unset; padding: 40px ;}
+}
+@media (min-width: 768px) and (max-width: 991.98px) { 
+  .products-details h2 { font-size: 30px; }
+  .armar { min-width: unset; padding: 40px 20px;}
+}
+
 

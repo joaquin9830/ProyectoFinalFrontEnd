@@ -7,7 +7,7 @@ import { About } from '../model/about';
   providedIn: 'root'
 })
 export class AboutService {
-  URL = 'http://localhost:8080/about/';
+  URL = 'https://frontendvj.herokuapp.com/about/';
 
   constructor(private httpClient: HttpClient) { }
 

@@ -11,27 +11,20 @@ div{
     margin-left: 57px;
     top:15px;
     padding: 2px 5px 5px 2px;
+    display: inline-block;
+    opacity: 0;
     
 }
 
 
 .grupo i{
     position:absolute;
-    margin-left: 45px;
-    font-size: 20px;
-    color:#000000
+    margin-left: 50px;
+    font-size: 25px;
+    color:#000000;
+    
     
 }
-
-.boton{
-    width:fit-content;
-    margin:0 auto;
-}
-p{
-    font-family: 'Fjalla One', sans-serif;
-    color:#ffffff;
-}
-
 @media (min-width: 576px){
     #foto{
         position:absolute;
@@ -44,14 +37,29 @@ p{
 }
 @media (max-width: 575px){
     #foto{
-        position:absolute;
-        width:15%;
+        position: static;
+        width:50%;
         border-radius: 100%;
         box-shadow: 3px 3px 3px rgb(0, 0, 0);
         left:3%;
         top:680px;
     }
 }
+
+
+
+
+
+.boton{
+    width:fit-content;
+    margin:0 auto;
+}
+p{
+    font-family: 'Fjalla One', sans-serif;
+    color:#ffffff;
+}
+
+
 
 #about{
     margin-top:3%;
