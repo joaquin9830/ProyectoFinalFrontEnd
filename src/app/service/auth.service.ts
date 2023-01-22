@@ -9,7 +9,7 @@ import { NuevoUsuario } from '../model/nuevo-usuario';
   providedIn: 'root'
 })
 export class AuthService {
-  authURL = 'https://frontendvj.herokuapp.com/auth/'
+  authURL = 'https://backend-vjc.onrender.com/auth/'
 
   constructor(private httpClient: HttpClient) { }
 

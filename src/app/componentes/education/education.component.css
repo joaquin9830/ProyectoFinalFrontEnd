@@ -1,30 +1,39 @@
+.div1 {
+  background: #000046;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #1CB5E0, #000046);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #1CB5E0, #000046);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
-.div1{
-  background-color:#2643e7;
-  font-family: 'Rubik', sans-serif;;
-  
+  font-family: 'Rubik', sans-serif;
+  ;
+
 }
 
-button{
+button {
   margin-right: 5px;
-  
+
 }
 
-.imagenes{
-  width:15%;
+.imagenes {
+  width: 15%;
 }
-.imagenes1{
-  width:20%;
+
+.imagenes1 {
+  width: 20%;
 }
-.imagenes3{
-  width:10%;
+
+.imagenes3 {
+  width: 10%;
 }
 
 
 #education {
   padding: 50px 15px 20px 15px;
-  border-bottom: 1px solid #454549;
-  text-align: center
+  
+  text-align: center;
+
 }
 
 #education h2 {
@@ -38,7 +47,9 @@ button{
   margin: 0 auto 30px auto;
   padding: 15px;
   border: 1px solid #000000;
-  text-align: left
+  text-align: left;
+  box-shadow: 10px 10px 30px rgb(0, 0, 0);
+  border-radius: 14px;
 }
 
 .education-block h3 {
@@ -71,18 +82,34 @@ button{
   padding: 0 0 0 15px
 }
 
-h2{
+h2 {
   display: inline;
   font-family: 'Rubik', sans-serif;
 }
-@media (max-width: 575.98px) { 
-  h1{font-size:40px; line-height:normal;}
-  .products-details h2{font-size: 40px;}
-  .armar{min-width: unset; padding: 40px ;}
-}
-@media (min-width: 768px) and (max-width: 991.98px) { 
-  .products-details h2 { font-size: 30px; }
-  .armar { min-width: unset; padding: 40px 20px;}
+
+@media (max-width: 575.98px) {
+  h1 {
+    font-size: 40px;
+    line-height: normal;
+  }
+
+  .products-details h2 {
+    font-size: 40px;
+  }
+
+  .armar {
+    min-width: unset;
+    padding: 40px;
+  }
 }
 
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .products-details h2 {
+    font-size: 30px;
+  }
 
+  .armar {
+    min-width: unset;
+    padding: 40px 20px;
+  }
+}

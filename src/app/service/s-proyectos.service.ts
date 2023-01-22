@@ -10,7 +10,7 @@ import { Proyectos } from '../model/proyectos';
   providedIn: 'root'
 })
 export class SProyectosService {
-  URL = 'https://frontendvj.herokuapp.com/proy/';
+  URL = 'https://backend-vjc.onrender.com/proy/';
 
   constructor(private httpClient: HttpClient) { }
 

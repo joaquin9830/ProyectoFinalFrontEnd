@@ -1,95 +1,122 @@
-.row{
-    background-color: rgb(46, 124, 177);
-    padding:20px;
+.row {
+  background: #000046;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #1CB5E0, #000046);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #1CB5E0, #000046);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  padding: 20px;
 }
 
-h2, h3{
-    color:rgb(255, 253, 253);
-    display: inline;
-    font-family: 'Rubik', sans-serif;
-  }
-
- 
-  
-  
- 
-
-  .wrapper2{
-    background: rgb(192, 199, 224);
-    border-radius: 14px;
-    padding: 25px;
-    margin-left: 20px;
-    margin-bottom: 15px;
-    max-width: 380px;
-    width: 90%;
-    box-shadow: 0px 5px 10px rgba(0,0,0,0.1);
-    text-align: center;
-  }
-
-
-  .boton1{
-    margin-bottom: 17px;
-    margin-left: 100px;
-    display:inline-block;
-  }
-  #education {
-    padding: 50px 15px 20px 15px;
-    border-bottom: 1px solid #454549;
-    text-align: center
-  }
-  
-  #education h2 {
-    color: #fafafa;
-    margin-bottom: 50px
-  }
-  
-  .education-block {
-    max-width: 700px;
-    margin: 0 auto 30px auto;
-    padding: 15px;
-    border: 1px solid #000000;
-    text-align: left
-  }
-  
-  .education-block h3 {
-    font-weight: 500;
-    float: left;
-    margin: 0;
-    color: #000000
-  }
-  
-  .education-block span {
-    color: #0b0c0c;
-    float: right
-  }
-  
-  .education-block h4 {
-    color: #d9dfe4;
-    clear: both;
-    font-weight: 500;
-    margin: 0 0 15px 0
-  }
-  
-  .education-block p,
-  .education-block ul {
-    margin: 0;
-    color: #74808a;
-    font-size: 0.9em
-  }
-  
-  .education-block ul {
-    padding: 0 0 0 15px
-  }
-  @media (max-width: 575.98px) { 
-    h1{font-size:40px; line-height:normal;}
-    .products-details h2{font-size: 40px;}
-    .armar{min-width: unset; padding: 40px ;}
-}
-@media (min-width: 768px) and (max-width: 991.98px) { 
-    .products-details h2 { font-size: 30px; }
-    .armar { min-width: unset; padding: 40px 20px;}
+h2,
+h3 {
+  color: rgb(255, 253, 253);
+  display: inline;
+  font-family: 'Rubik', sans-serif;
 }
 
-@media (min-width: 992px) and (max-width: 1199.98px) { }
 
-@media (min-width: 1200px) { }
+
+
+
+
+.wrapper2 {
+  background: rgb(192, 199, 224);
+  border-radius: 14px;
+  padding: 25px;
+  margin-left: 20px;
+  margin-bottom: 15px;
+  max-width: 380px;
+  width: 90%;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  box-shadow: 10px 10px 30px rgb(0, 0, 0);
+}
+
+
+.boton1 {
+  margin-bottom: 17px;
+  margin-left: 100px;
+  display: inline-block;
+}
+
+#education {
+  padding: 50px 15px 20px 15px;
+  border-bottom: 1px solid #454549;
+  text-align: center
+}
+
+#education h2 {
+  color: #fafafa;
+  margin-bottom: 50px
+}
+
+.education-block {
+  max-width: 700px;
+  margin: 0 auto 30px auto;
+  padding: 15px;
+  border: 1px solid #000000;
+  text-align: left
+}
+
+.education-block h3 {
+  font-weight: 500;
+  float: left;
+  margin: 0;
+  color: #000000
+}
+
+.education-block span {
+  color: #0b0c0c;
+  float: right
+}
+
+.education-block h4 {
+  color: #d9dfe4;
+  clear: both;
+  font-weight: 500;
+  margin: 0 0 15px 0
+}
+
+.education-block p,
+.education-block ul {
+  margin: 0;
+  color: #74808a;
+  font-size: 0.9em
+}
+
+.education-block ul {
+  padding: 0 0 0 15px
+}
+
+@media (max-width: 575.98px) {
+  h1 {
+    font-size: 40px;
+    line-height: normal;
+  }
+
+  .products-details h2 {
+    font-size: 40px;
+  }
+
+  .armar {
+    min-width: unset;
+    padding: 40px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .products-details h2 {
+    font-size: 30px;
+  }
+
+  .armar {
+    min-width: unset;
+    padding: 40px 20px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {}
+
+@media (min-width: 1200px) {}

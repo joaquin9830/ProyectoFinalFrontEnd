@@ -7,7 +7,7 @@ import { About } from '../model/about';
   providedIn: 'root'
 })
 export class AboutService {
-  URL = 'https://frontendvj.herokuapp.com/about/';
+  URL = 'https://backend-vjc.onrender.com/about/';
 
   constructor(private httpClient: HttpClient) { }
 

@@ -7,7 +7,7 @@ import {persona} from '../model/persona.model'
 })
 
 export class PersonaService {
-  URL = 'https://frontendvj.herokuapp.com/personas/';
+  URL = 'https://backend-vjc.onrender.com/personas/';
   constructor(private http:HttpClient ) { }
   public getPersona(): Observable<persona>{
     return this.http.get<persona>(this.URL+'traer/perfil');

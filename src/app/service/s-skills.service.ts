@@ -7,7 +7,7 @@ import { SSoftskill } from '../model/s-softskill';
   providedIn: 'root'
 })
 export class SSkillsService {
-  URL = 'https://frontendvj.herokuapp.com/soskill/';
+  URL = 'https://backend-vjc.onrender.com/soskill/';
 
   constructor(private httpClient: HttpClient) { }
 

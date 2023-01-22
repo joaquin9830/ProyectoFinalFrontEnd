@@ -1,25 +1,54 @@
-.row{
+.row {
   padding: 20px;
+  background: #000046;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #1CB5E0, #000046);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #1CB5E0, #000046);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
-div{
-  background: #4faceb;
+
+div {
+
+
+
   font-family: 'Rubik', sans-serif;
 }
-h1, h4{
+
+h1,
+h4 {
   display: inline;
   font-family: 'Rubik', sans-serif;
 }
-h1{
-  color:aliceblue;
-  
-}
-@media (max-width: 575.98px) { 
-  h1{font-size:40px; line-height:normal;}
-  .products-details h2{font-size: 40px;}
-  .armar{min-width: unset; padding: 40px ;}
-}
-@media (min-width: 768px) and (max-width: 991.98px) { 
-  .products-details h2 { font-size: 30px; }
-  .armar { min-width: unset; padding: 40px 20px;}
+
+h1 {
+  color: aliceblue;
+
 }
 
+@media (max-width: 575.98px) {
+  h1 {
+    font-size: 40px;
+    line-height: normal;
+  }
+
+  .products-details h2 {
+    font-size: 40px;
+  }
+
+  .armar {
+    min-width: unset;
+    padding: 40px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .products-details h2 {
+    font-size: 30px;
+  }
+
+  .armar {
+    min-width: unset;
+    padding: 40px 20px;
+  }
+}
